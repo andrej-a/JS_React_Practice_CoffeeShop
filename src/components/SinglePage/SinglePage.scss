@@ -1,0 +1,158 @@
+@import "../../styles/varyable.scss";
+
+.singlePage{
+    display: flex;
+    flex-direction: column;
+    width: $width;
+    max-width: $max-width;
+    min-width: $min-width;
+    height: 715px;
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        max-width: $max-width;
+        min-width: $min-width;
+        height: 260px;
+
+        background-image: url(../../resources/singlePageHeader.png);
+
+        &_title{
+            width: 223px;
+            height: 46px;
+
+            p{
+                font-family: Merienda;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 58px;
+
+                color: $main-color;
+            }
+        }
+    }//header
+
+    &__cardField{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: 455px;
+
+        .cardItem{
+            display: flex;
+            width: 865px;
+            height: 366px;
+            overflow: hidden;
+
+            &__image{
+                width: 392px;
+                height: 355px;
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: -25px;
+                    left: -25px;
+                }
+            }
+
+            &__info{
+                display: block;
+                position: relative;
+                width: 392px;
+                height: inherit;
+
+                &__about{
+                    width: 99px;
+                    height: 26px;
+                    position: absolute;
+                    left: 222px;
+                    p{
+                        font-family: Merienda;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 35px;
+
+                        color: $dark-color;
+
+                    }
+                }
+
+                &__logo{
+                    position: absolute;
+                    width: 200px;
+                    height: 30px;
+                    left: 172px;
+                    top: 55px;
+                }
+
+                &__country{
+                    position: absolute;
+                    width: 104px;
+                    height: 21px;
+                    left: 55px;
+                    top: 110px;
+
+                    p{
+                        font-family: Merienda;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $dark-color;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                &__description{
+                    position: absolute;
+                    width: 418px;
+                    height: 102px;
+                    left: 55px;
+                    top: 147px;
+
+                    p{
+                        font-family: Merienda;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $dark-color;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                &__price{
+                    position: absolute;
+                    width: 127px;
+                    height: 35px;
+                    left: 55px;
+                    top: 265px;
+
+                    p{
+                        font-family: Merienda;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $dark-color;
+
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
