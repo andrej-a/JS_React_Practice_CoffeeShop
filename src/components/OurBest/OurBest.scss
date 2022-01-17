@@ -1,0 +1,92 @@
+@import "../../styles/varyable.scss";
+
+.best{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: 495px;
+    background-image: url(../../resources/paper.png);
+
+    &__title{
+        display: block;
+        width: 103px;
+        height: 26px;
+        padding-top: 80px;
+
+        p{
+            font-family: Merienda;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: center;
+
+            color: $dark-color;
+        }
+    }
+
+    &__list{
+        display: flex;
+        width: 802px;
+        height: auto;
+        margin-top: 65px;
+
+        &__items{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            list-style: none;
+
+            :first-child{
+                margin-left: 0;
+            }
+            &__item{
+                display: block;
+                position: relative;
+                width: 220px;
+                height: 240px;
+                margin-left: 71px;
+                background: rgba(255, 255, 255, 0.65);
+                border-radius: 8px;
+                p{
+                        font-family: Merienda;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: $dark-color;
+                }
+                img{
+                    position: absolute;
+                    width: 151px;
+                    height: 130px;
+                    top: 22px;
+                    left: 34px;
+                }
+                .title{
+                    position: absolute;
+                    width: 177px;
+                    height: 21px;
+                    top: 166px;
+                    left: 21px;
+
+                }
+                .cost{
+                    position: absolute;
+                    width: 47px;
+                    height: 21px;
+                    top: 197px;
+                    left: 153px;
+
+                    p{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}//best

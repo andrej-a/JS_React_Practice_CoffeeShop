@@ -1,0 +1,33 @@
+.main__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+    width: 200px;
+   
+    &__group, &__groupDark{
+        width: 35px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-image: url(../../resources/Group.png);
+
+        &__after, &__before{
+            display: block;
+            width: 60px;
+            height: 0px;
+            border: 1px solid #000;
+            margin-left: 25px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &__before{
+            margin-right: 25px;
+            margin-left: 0;
+        }
+    }
+
+    &__groupDark{
+        background-image: url(../../resources/blackGroup.png);
+    }
+}//logo

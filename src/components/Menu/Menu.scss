@@ -1,0 +1,63 @@
+@import "../../styles/varyable.scss";
+.menu, .menu-header{
+    display: flex;
+    align-items: flex-end;
+    width: 380px;
+    padding-top: 30px;
+
+     
+    a:hover {
+        color: rgb(214, 69, 69);
+    }
+    a:active,
+    a{
+        font-family: Merienda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: $dark-color;
+        transition: color .5s ease;
+        text-decoration: none;
+    }
+
+    &__logo, &__logo-header{
+        width: 35px;
+        height: 35px;
+        background-image: url(../../resources/menuLogo.png);
+    }
+
+    &__homePage{
+        width: 77px;
+        height: 18px;
+        margin-left: 5px;
+    }
+
+    &__ourCoffePage{
+        width: 63px;
+        height: 18px;
+        margin-left: 40px;
+    }
+
+    &__forYouPage{
+        width: 110px;
+        height: 18px;
+        margin-left: 40px;
+    }
+}//menu
+
+.menu-header{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: calc((100% - $max-width) / 2 + 150px);
+
+    a {
+        color: $main-color;
+    }
+
+    &__logo-header{
+        background-image: url(../../resources/menuLogoWhite.png);
+        background-position: center center;
+    }
+}

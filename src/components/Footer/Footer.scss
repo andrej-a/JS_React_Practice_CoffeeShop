@@ -1,0 +1,11 @@
+@import "../../styles/varyable.scss";
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width;
+    max-width: $max-width;
+    min-width: $min-width;
+    height: 150px;
+}
