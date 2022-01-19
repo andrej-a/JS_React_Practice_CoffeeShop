@@ -1,0 +1,12 @@
+@import "../../styles/varyable.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+.ourCoffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width;
+    min-width: $min-width;
+    height: 1396px;
+}
+

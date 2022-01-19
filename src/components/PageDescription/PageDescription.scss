@@ -1,0 +1,74 @@
+@import "../../styles/varyable.scss";
+
+.pageDescription{
+    display: flex;
+    width: 697px;
+    height: 355px;
+    padding-top: 70px;
+
+    &__image{
+        width: 272px;
+        height: inherit;
+        position: relative;
+        object-fit: cover;
+
+        img{
+            position: absolute;
+            top: -25px;
+            left: -25px;
+        }
+    }
+
+    &__text{
+        width: 425px;
+        height: inherit;
+        position: relative;
+        padding-top: 0;
+
+        p{
+            font-family: Merienda;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            margin: 0;
+            color: $dark-color;
+        }
+
+        &__title{
+            width: 197px;
+            height: 26px;
+            position: absolute;
+            top: 10px;
+            left: 157px;
+        }
+
+        &__logo{
+            position: absolute;
+            top: 55px;
+            left: 157px;
+        }
+
+        &__descr{
+            position: absolute;
+            width: 346px;
+            height: 232px;
+            text-align: center;
+            top: 110px;
+            left: 79px;
+
+
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.bottom_line{
+    width: 240px;
+    height: 0px;
+    margin-top: 60px;
+    border: 1px solid $dark-color;
+}
