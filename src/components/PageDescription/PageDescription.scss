@@ -11,6 +11,7 @@
         height: inherit;
         position: relative;
         object-fit: cover;
+        filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
 
         img{
             position: absolute;

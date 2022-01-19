@@ -1,0 +1,52 @@
+@import "../../styles/varyable.scss";
+@import "../../styles/text.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+.coffee_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-top: 61px;
+    margin-bottom: 18px;
+
+    &_item{
+        position: relative;
+        width: 220px;
+        height: 260px;
+        margin-bottom: 60px;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+
+        &_image{
+            width: 167px;
+            height: 115px;
+            position: absolute;
+            top: 37px;
+            left: 27px;
+        }
+
+        &_title{
+            position: absolute;
+            top: 166px;
+            left: 23px;
+        }
+
+        &_country{
+            position: absolute;
+            top: 195px;
+            right: 27px;
+        }
+
+        &_price{
+            position: absolute;
+            top: 223px;
+            right: 27px;
+            font-weight: bold;
+        }
+    }
+    &_item:hover{
+        box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.25);
+    }
+}

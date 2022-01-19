@@ -1,5 +1,5 @@
 import "./Rectangle.scss"
-import Logo from "../Logo/Logo";
+import Logo from "../../Logo/Logo";
 const Rectangle = (props) => {
     return(
         <div className="rectangle">

@@ -26,7 +26,7 @@ const PageDescription = (props) => {
                         </p>
                         <p>
                             As greatly removed calling pleased improve an. Last ask him cold feel
-                            met spot shy want. Children me laughing we prospect answered followed. At it went
+                            met spot shy want. <br /> Children me laughing we prospect answered followed. At it went
                             is song that held help face.
                         </p>
                     </div>

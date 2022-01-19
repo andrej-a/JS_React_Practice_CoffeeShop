@@ -17,9 +17,9 @@ function App() {
                     <main>
                     <Suspense fallback={<Spinner />}>
                         <Routes>
-                            <Route path="/ourcoffee" element={<OurCoffee />}/>
                             <Route path="/" element={<Main />} />
-                            <Route path="/single" element={<SinglePage />} />
+                            <Route path="/ourcoffee" element={<OurCoffee />}/>
+                            <Route path="/ourcoffee/:itemID" element={<SinglePage />} />
                         </Routes>
                     </Suspense>
                     </main>

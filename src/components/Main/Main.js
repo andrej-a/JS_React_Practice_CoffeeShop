@@ -1,5 +1,5 @@
 import "./Main.scss";
-import Rectangle from "../Rectangle/Rectangle";
+import Rectangle from "./Rectangle/Rectangle";
 import OurBest from "./OurBest/OurBest";
 import Logo from "../Logo/Logo";
 const Main = (props) => {
