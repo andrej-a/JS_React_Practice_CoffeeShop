@@ -1,15 +1,11 @@
 import "./SinglePage.scss";
 import cardItem from "../../resources/cards__image/sinplePageCard.png";
 import Logo from "../Logo/Logo";
+import Header from "../Header/Header";
 const SinglePage = (props) => {
     return(
         <div className="singlePage">
-            <div className="singlePage__header">
-                <div className="singlePage__header_title">
-                    <p>Our Coffee</p>
-                </div>
-            </div>
-
+            <Header />
             <div className="singlePage__cardField">
                 <div className="cardItem">
                     <div className="cardItem__image">

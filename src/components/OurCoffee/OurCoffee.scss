@@ -1,0 +1,54 @@
+@import "../../styles/varyable.scss";
+@import "../../styles/text.scss";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+.ourCoffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width;
+    min-width: $min-width;
+    height: auto;
+
+    &__activ{
+        display: flex;
+        margin-top: 30px;
+
+        &_search{
+            margin-right: 83px;
+            input{
+                background: $main-color;
+                font-size: 12px;
+                line-height: calc(17 / 12) * 100%;
+                box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+                text-align: center;
+                padding: 5px 18px 5px 18px;
+                margin-left: 19px;
+            }
+        }
+
+        &_filter{
+            :first-child{
+                margin-left: 35px;
+            }
+            input{
+                width: 75px;
+                height: 30px;
+                margin-right: 5px;
+                font-size: 12px;
+                line-height: calc(17 / 12) * 100%;
+                background: $main-color;
+                box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 4px 0px 0px 4px;
+                cursor: pointer;
+
+            }
+
+            input:hover{
+                width: 85px;
+                box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}

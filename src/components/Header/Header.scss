@@ -1,0 +1,34 @@
+@import "../../styles/varyable.scss";
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    max-width: $max-width;
+    min-width: $min-width;
+    height: 260px;
+
+    background-image: url(../../resources/singlePageHeader.png);
+
+    &__title{
+        width: 223px;
+        height: 46px;
+
+        p{
+            font-family: Merienda;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 58px;
+
+            color: $main-color;
+        }
+    }
+}//header
+
+.header .pleasure{
+    background-image: url(../../resources/pleasureHeader.png);
+}
