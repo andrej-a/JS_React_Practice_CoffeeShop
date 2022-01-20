@@ -1,10 +1,10 @@
 @import "../../styles/varyable.scss";
 
 
-.header{
+.header, .header-pleasure{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: inherit;
     max-width: $max-width;
@@ -14,21 +14,19 @@
     background-image: url(../../resources/singlePageHeader.png);
 
     &__title{
-        width: 223px;
-        height: 46px;
-
+        padding-top: 130px;
         p{
             font-family: Merienda;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 58px;
-
+            margin: 0;
             color: $main-color;
         }
     }
 }//header
 
-.header .pleasure{
+.header-pleasure{
     background-image: url(../../resources/pleasureHeader.png);
 }

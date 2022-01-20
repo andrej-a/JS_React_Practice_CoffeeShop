@@ -4,8 +4,9 @@ import "./App.scss"
 import Spinner from "../Spinner/Spinner";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
-import OurCoffee from "../OurCoffee/OurCoffee";
 const Main = lazy(() => import("../Main/Main"));
+const OurCoffee = lazy(() => import("../OurCoffee/OurCoffee"))
+const PleasurePage = lazy(() => import("../PleasurePage/PleasurePage"))
 const SinglePage = lazy(() => import("../SinglePage/SinglePage"));
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Main />} />
                             <Route path="/ourcoffee" element={<OurCoffee />}/>
+                            <Route path="/pleasure" element={<PleasurePage />}/>
                             <Route path="/ourcoffee/:itemID" element={<SinglePage />} />
                         </Routes>
                     </Suspense>
