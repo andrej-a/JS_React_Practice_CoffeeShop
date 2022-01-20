@@ -7,7 +7,7 @@ const Menu = (props) => {
             <div className={props.logo}></div>
             <div className="menu__homePage"> <Link to="/"> Coffee house </Link> </div>
             <div className="menu__ourCoffePage"> <Link to="/ourcoffee"> Our coffee </Link> </div>
-            <div className="menu__forYouPage"> <a href="#">For your pleasure</a> </div>
+            <div className="menu__forYouPage"> <Link to="/pleasure"> For your pleasure </Link></div>
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import "./PageDescription.scss";
-import image from "../../resources/OurCoffeIMG.png"
 import Logo from "../Logo/Logo";
 
 const PageDescription = (props) => {
@@ -7,11 +6,11 @@ const PageDescription = (props) => {
         <>
             <div className="pageDescription">
                 <div className="pageDescription__image">
-                    <img src={image} alt="girl-and-coffee" />
+                    <img src={props.image} alt="girl-and-coffee" />
                 </div>
                 <div className="pageDescription__text">
                     <div className="pageDescription__text__title">
-                        <p>About our beans</p>
+                        <p>{props.title}</p>
                     </div>
                     <div className="pageDescription__text__logo">
                         <Logo paddingTop={0} borderColorDark={"#000"} class={"main__logo__groupDark"}/>
