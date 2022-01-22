@@ -1,5 +1,5 @@
 @import "../../styles/varyable.scss";
-
+@import "../../styles/text.scss";
 .singlePage{
     display: flex;
     flex-direction: column;
@@ -47,13 +47,8 @@
                     position: absolute;
                     left: 222px;
                     p{
-                        font-family: Merienda;
-                        font-style: normal;
-                        font-weight: normal;
                         font-size: 24px;
                         line-height: 35px;
-
-                        color: $dark-color;
 
                     }
                 }
@@ -73,13 +68,10 @@
                     top: 110px;
 
                     p{
-                        font-family: Merienda;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: $dark-color;
+                        font-size: 16px;
+                        font-weight: normal;
                         span{
+                            font-size: 18px;
                             font-weight: 700;
                         }
                     }
@@ -93,13 +85,10 @@
                     top: 147px;
 
                     p{
-                        font-family: Merienda;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: $dark-color;
+                        font-size: 16px;
+                        font-weight: normal;
                         span{
+                            font-size: 18px;
                             font-weight: 700;
                         }
                     }
@@ -111,18 +100,15 @@
                     height: 35px;
                     left: 55px;
                     top: 265px;
+                    margin-top: 20px;
 
                     p{
-                        font-family: Merienda;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: $dark-color;
-
-                        span{
-                            font-size: 18px;
-                        }
+                        font-weight: 700;
+                    }
+                    span{
+                        font-style: italic;
+                        font-weight: 900;
+                        font-size: 25px;
                     }
                 }
             }

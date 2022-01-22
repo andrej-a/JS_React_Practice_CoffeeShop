@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 @import "../../styles/varyable.scss";
-
+@import "../../styles/text.scss";
 .main{
     display: flex;
     position: relative;
@@ -27,48 +27,26 @@
         width: 670px;
         height: 44px;
 
-        font-family: Merienda;
-        font-size: 40px;
-        font-style: normal;
         font-weight: 700;
         line-height: 58px;
         padding-top: 181px;
-        color: $main-color;
         letter-spacing: 0em;
     }
 
     &__subtitle{
-        width: 530px;
         height: 27px;
         margin-top: 35px;
 
-        font-family: Merienda;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 35px;
-
-        color: $main-color;
     }
 
     &__tryBeans{
-        width: 275px;
         height: 35px;
         margin-top: 20px;
-
-        font-family: Merienda;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 35px;
-
-        color: $main-color;
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     &__moreBtn{
-
         width: 120px;
         height: 30px;
         margin-top: 18px;
@@ -82,11 +60,7 @@
         cursor: pointer;
 
         span{
-            font-family: Merienda;
-            font-style: normal;
             font-weight: bold;
-            font-size: 14px;
-            line-height: 20px;
             transition: color .5s ease;
             color: $main-color;
         }

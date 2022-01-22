@@ -25,7 +25,7 @@ const OurBest = (props) => {
                         <li className="best__list__items__item">
                             <img src={firstCard} alt="first" />
                             <div className="title">
-                                <p>{item.name} {item.weight} kg</p>
+                                <p className="text">{item.name} {item.weight} kg</p>
                             </div>
                             <div className="cost">
                                 <p>{item.price}$</p>
@@ -45,7 +45,7 @@ const OurBest = (props) => {
     const content = state ? onSetCards(state) : null;
     return(
         <div className="best">
-            <div className="best__title">
+            <div className="best__title subheader_text">
                 <p>Our best</p>
             </div>
 

@@ -1,5 +1,5 @@
 @import "../../styles/varyable.scss";
-
+@import "../../styles/text.scss";
 
 .header, .header-pleasure{
     display: flex;
@@ -15,15 +15,6 @@
 
     &__title{
         padding-top: 130px;
-        p{
-            font-family: Merienda;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 58px;
-            margin: 0;
-            color: $main-color;
-        }
     }
 }//header
 

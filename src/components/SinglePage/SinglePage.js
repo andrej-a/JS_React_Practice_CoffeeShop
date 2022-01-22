@@ -29,15 +29,15 @@ const SinglePage = () => {
                                 <img src={cardItem} alt="" />
                             </div>
                             <div className="cardItem__info">
-                                <div className="cardItem__info__about"><p>About it</p></div>
+                                <div className="cardItem__info__about"><p className="text">About it</p></div>
                                 <div className="cardItem__info__logo">
                                     <Logo paddingTop={0} borderColorDark={"#000"} class={"main__logo__groupDark"}/>
                                 </div>
-                                <div className="cardItem__info__country"><p><span>Country:</span> {item.country} </p></div>
+                                <div className="cardItem__info__country"><p className="text"><span>Country:</span> {item.country} </p></div>
                                 <div className="cardItem__info__description">
-                                    <p><span>Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className="text"><span>Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
-                                <div className="cardItem__info__price"><p>Price: <span>{item.price}$</span></p></div>
+                                <div className="cardItem__info__price"><p className="text">Price: <span>{item.price}$</span></p></div>
                             </div>
                         </div>
                     )

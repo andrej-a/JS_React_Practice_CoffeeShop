@@ -10,7 +10,7 @@ const PageDescription = (props) => {
                 </div>
                 <div className="pageDescription__text">
                     <div className="pageDescription__text__title">
-                        <p>{props.title}</p>
+                        <p className="subheader_text">{props.title}</p>
                     </div>
                     <div className="pageDescription__text__logo">
                         <Logo paddingTop={0} borderColorDark={"#000"} class={"main__logo__groupDark"}/>

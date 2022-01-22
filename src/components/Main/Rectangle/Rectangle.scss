@@ -1,5 +1,5 @@
 @import "../../../styles/varyable.scss";
-
+@import "../../../styles/text.scss";
 .rectangle{
     display: flex;
     flex-direction: column;
@@ -13,13 +13,10 @@
         height: 26px;
         padding-top: 80px;
 
-        font-family: Merienda;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 35px;
-
-        color: $dark-color;
+        span{
+            font-weight: normal;
+            color: $dark-color;
+        }
     }
 
     &__description{
@@ -28,14 +25,7 @@
         margin-top: 41px;
 
         p{
-            font-family: Merienda;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 20px;
             text-align: center;
-
-            color: #000000;
         }
     }
 }//rectangle

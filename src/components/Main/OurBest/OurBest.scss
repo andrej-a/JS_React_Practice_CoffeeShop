@@ -1,5 +1,5 @@
 @import "../../../styles/varyable.scss";
-
+@import "../../../styles/text.scss";
 .best{
     display: flex;
     flex-direction: column;
@@ -16,11 +16,7 @@
         padding-top: 60px;
 
         p{
-            font-family: Merienda;
-            font-style: normal;
             font-weight: normal;
-            font-size: 24px;
-            line-height: 35px;
             text-align: center;
 
             color: $dark-color;
@@ -51,11 +47,7 @@
                 border-radius: 8px;
                 transition: box-shadow .3s ease;
                 p{
-                        font-family: Merienda;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 20px;
+                        
                         text-align: center;
                         color: $dark-color;
                 }

@@ -1,4 +1,5 @@
 @import "./varyable.scss";
+
 .text{
     margin: 0;
     font-family: Merienda;
@@ -7,4 +8,23 @@
     font-size: 14px;
     line-height: 20px;
     color: $dark-color;
+}
+
+.header_text{
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    margin: 0;
+    color: $main-color;
+}
+
+.subheader_text{
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: $main-color;
 }
