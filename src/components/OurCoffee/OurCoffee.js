@@ -1,10 +1,65 @@
+import { useEffect, useState } from "react";
+import data from "../../data/data";
+import _doShortName from "../../service/service";
+
 import "./OurCoffee.scss";
 import Header from "../Header/Header";
 import PageDescription from "../PageDescription/PageDescription";
 import CoffeItemsBox from "../CoffeeItemsBox/CoffeItemsBox";
-import image from "../../resources/OurCoffeIMG.png"
+import image from "../../resources/OurCoffeIMG.png";
 
 const OurCoffee = () => {
+    const [state, setState] = useState(null);
+    const [nameValue, setNameValue] = useState(" ");
+    const [filterValue, setFilterValue] = useState("All");
+
+    useEffect(() => {
+        onSetData(data);
+    }, [data]);
+
+    useEffect(() => {
+        filterByCountry(filterValue);
+    }, [filterValue]);
+
+    useEffect(() => {
+        searchByName(nameValue);
+    }, [nameValue]);
+
+
+    const onSetData = (array) => {
+        _doShortName(array);
+        setState(array);
+    };
+
+    const onSetFilterValue = (e) => {
+        setFilterValue(e.target.value);
+    }
+
+    const onSetValue = (e) => {
+        setNameValue(e.target.value)
+    }
+
+    const searchByName = (name) => {
+
+        if (name.length === 1 ) {
+            onSetData(data);
+        } else {
+            const filterArray = state.filter(item => item["name"].toLowerCase().match(nameValue.toLowerCase()));
+            onSetData(filterArray);
+        }
+    }
+
+    const filterByCountry = (value) => {
+        if (value === "All" ) {
+            onSetData(data);
+        } else {
+            const filterArray = data.filter(item => item["country"] === value);
+            onSetData(filterArray);
+        }
+    };
+
+    const itemBox = state ? <CoffeItemsBox data={state}/> : null;
+
     return(
         <>
         <Header 
@@ -19,18 +74,55 @@ const OurCoffee = () => {
             <div className="ourCoffee__activ">
                 <div className="ourCoffee__activ_search">
                     <label className="text" htmlFor="">Looking for 
-                        <input className="text" name="search" type="text" placeholder="start typing here..." />
+                        <input 
+                        onChange={(e) => {
+                            onSetValue(e);
+                        }}
+                        className="text" 
+                        name="search" 
+                        type="text" 
+                        placeholder="start typing here..." 
+                        />
                     </label>
                 </div>
                 <div className="ourCoffee__activ_filter">
                     <label className="text" htmlFor="">Or filter
-                        <input className="text" type="button" value="Brazil" />
-                        <input className="text" type="button" value="Kenya" />
-                        <input className="text" type="button" value="Columbia" />
+                        <input 
+                        onClick={(e) => {
+                            onSetFilterValue(e);
+                        }} 
+                        className="text" 
+                        type="button" 
+                        value="All" 
+                        />
+                        <input
+                        onClick={(e) => {
+                            onSetFilterValue(e);
+                        }} 
+                        className="text"
+                        type="button"
+                        value="Brazil"
+                         />
+                        <input 
+                        onClick={(e) => {
+                            onSetFilterValue(e);
+                        }}
+                        className="text" 
+                        type="button" 
+                        value="Kenya" 
+                        />
+                        <input 
+                        onClick={(e) => {
+                            onSetFilterValue(e);
+                        }}
+                        className="text" 
+                        type="button" 
+                        value="Columbia" 
+                        />
                     </label>
                 </div>
             </div> {/* active */}
-            <CoffeItemsBox />         
+               {itemBox}      
         </div>
         </>
     )

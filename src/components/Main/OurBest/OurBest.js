@@ -1,8 +1,48 @@
 import "./OurBest.scss";
-import firstCard from "../../../resources/cards__image/1.png"
-import secondCard from "../../../resources/cards__image/2.png"
-import thirdCard from "../../../resources/cards__image/3.png"
+import firstCard from "../../../resources/cards__image/1.png";
+
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import data from "../../../data/data";
+import _doShortName from "../../../service/service"
 const OurBest = (props) => {
+    const [state, setState] = useState(null);
+
+    useEffect(() => {
+        onState(data);
+    }, [data]);
+
+    const onState = (array) => {
+        const bestItems = array.filter(item => item["best"]);
+        _doShortName(bestItems); 
+        setState(bestItems);
+    };
+
+    const onSetCards = (array) => {
+        const items = array.map(item => {
+            return(
+                     <Link key={item.id} to={`/ourcoffee/${item.id}`}>
+                        <li className="best__list__items__item">
+                            <img src={firstCard} alt="first" />
+                            <div className="title">
+                                <p>{item.name} {item.weight} kg</p>
+                            </div>
+                            <div className="cost">
+                                <p>{item.price}$</p>
+                            </div>
+                        </li>
+                     </Link>
+            )
+        });
+
+        return(
+            <ul className="best__list__items">
+                  {items} 
+            </ul>
+        )
+    };
+
+    const content = state ? onSetCards(state) : null;
     return(
         <div className="best">
             <div className="best__title">
@@ -10,37 +50,9 @@ const OurBest = (props) => {
             </div>
 
             <div className="best__list">
-                <ul className="best__list__items">
-                    <li className="best__list__items__item">
-                        <img src={firstCard} alt="1" />
-                        <div className="title">
-                            <p>Solimo Coffee Beans 2 kg</p>
-                        </div>
-                        <div className="cost">
-                            <p>10.73$</p>
-                        </div>
-                    </li>
-                    <li className="best__list__items__item">
-                        <img src={secondCard} alt="1" />
-                        <div className="title">
-                            <p>Presto Coffee Beans 1 kg</p>
-                        </div>
-                        <div className="cost">
-                            <p>15.99$</p>
-                        </div>
-                    </li>
-                    <li className="best__list__items__item">
-                        <img src={thirdCard} alt="1" />
-                        <div className="title">
-                            <p>AROMISTICO Coffee 1 kg</p>
-                        </div>
-                        <div className="cost">
-                            <p>6.99$</p>
-                        </div>
-                    </li>
-                </ul>
+                {content}
             </div>
-        </div>
+        </div> /* \best */
     )
 };
 

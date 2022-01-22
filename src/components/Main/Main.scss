@@ -9,7 +9,8 @@
     width: $width;
     max-width: $max-width;
     min-width: $min-width;
-    height: $main-height;
+    height: auto;
+    min-height: $main-height;
 
     &__header{
         display: flex;

@@ -1,9 +1,13 @@
+import { useEffect, useState } from "react";
+import data from "../../data/data";
+
 import "./PleasurePage.scss";
 import Header from "../Header/Header";
 import PageDescription from "../PageDescription/PageDescription";
 import CoffeItemsBox from "../CoffeeItemsBox/CoffeItemsBox";
 import image from "../../resources/pleasureIMG.png";
-const PleasurePage = () => {
+const PleasurePage = (props) => {
+    
     return(
         <div className="pleasure">
             <Header 
@@ -14,7 +18,7 @@ const PleasurePage = () => {
             image={image} 
             title={"About our goods"}
             />
-            <CoffeItemsBox />
+            <CoffeItemsBox data={data}/>
         </div>
     )
 }

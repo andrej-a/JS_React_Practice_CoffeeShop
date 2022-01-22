@@ -3,10 +3,12 @@
 .singlePage{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: $width;
     max-width: $max-width;
     min-width: $min-width;
     height: 715px;
+    margin-bottom: 190px;
 
     &__cardField{
         display: flex;
@@ -66,7 +68,6 @@
 
                 &__country{
                     position: absolute;
-                    width: 104px;
                     height: 21px;
                     left: 55px;
                     top: 110px;

@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import "./App.scss"
+
+import "./App.scss";
+
 import Spinner from "../Spinner/Spinner";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
@@ -22,6 +24,7 @@ function App() {
                             <Route path="/ourcoffee" element={<OurCoffee />}/>
                             <Route path="/pleasure" element={<PleasurePage />}/>
                             <Route path="/ourcoffee/:itemID" element={<SinglePage />} />
+                            <Route path="*" element={<Main />} />
                         </Routes>
                     </Suspense>
                     </main>
