@@ -13,9 +13,13 @@ const OurBest = (props) => {
     }, [data]);
 
     const onState = (array) => {
-        const bestItems = array.filter(item => item["best"]);
-        _doShortName(bestItems); 
-        setState(bestItems);
+        try{
+            const bestItems = array.filter(item => item["best"]);
+            _doShortName(bestItems); 
+            setState(bestItems);
+        } catch(e){
+            console.log( `Error: ${e.name}: ${e.message}`);
+        }
     };
 
     const onSetCards = (array) => {

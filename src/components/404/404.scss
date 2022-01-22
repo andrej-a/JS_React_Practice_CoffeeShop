@@ -1,0 +1,21 @@
+@import "../../styles/varyable.scss";
+@import "../../styles/text.scss";
+
+.title{
+    width: $width;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text{
+        p{  
+            font-family: Merienda;
+            color: $dark-color;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(214, 69, 69);
+        }
+    }
+}

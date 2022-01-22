@@ -56,6 +56,22 @@ const data = [
         "price": 4.99,
         "best": false,
     },
+    {
+        "id": 1020037,
+        "name": "Moccaro Coffee Beans",
+        "weight": 2,
+        "country": "Kenya",
+        "price": 9.45,
+        "best": false,
+    },
+    {
+        "id": 1020038,
+        "name": "Presto Coffee Beans",
+        "weight": 2,
+        "country": "Brazil",
+        "price": 18.99,
+        "best": false,
+    },
 ];
 
 export default data;

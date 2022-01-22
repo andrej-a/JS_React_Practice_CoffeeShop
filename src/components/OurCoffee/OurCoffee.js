@@ -14,7 +14,11 @@ const OurCoffee = () => {
     const [filterValue, setFilterValue] = useState("All");
 
     useEffect(() => {
-        onSetData(data);
+        try{
+            onSetData(data);
+        }catch(e){
+            console.log( `Error: ${e.name}: ${e.message}`);
+        }
     }, [data]);
 
     useEffect(() => {
@@ -41,20 +45,28 @@ const OurCoffee = () => {
 
     const searchByName = (name) => {
 
-        if (name.length === 1 ) {
-            onSetData(data);
-        } else {
-            const filterArray = state.filter(item => item["name"].toLowerCase().match(nameValue.toLowerCase()));
-            onSetData(filterArray);
+        try{
+            if (name.length === 1 ) {
+                onSetData(data);
+            } else {
+                const filterArray = state.filter(item => item["name"].toLowerCase().match(nameValue.toLowerCase()));
+                onSetData(filterArray);
+            }
+        } catch(e){
+            console.log( `Error: ${e.name}: ${e.message}`);
         }
     }
 
     const filterByCountry = (value) => {
-        if (value === "All" ) {
-            onSetData(data);
-        } else {
-            const filterArray = data.filter(item => item["country"] === value);
-            onSetData(filterArray);
+        try{
+            if (value === "All" ) {
+                onSetData(data);
+            } else {
+                const filterArray = data.filter(item => item["country"] === value);
+                onSetData(filterArray);
+            }
+        }catch(e){
+            console.log( `Error: ${e.name}: ${e.message}`);
         }
     };
 
