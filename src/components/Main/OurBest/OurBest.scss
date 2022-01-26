@@ -1,5 +1,6 @@
 @import "../../../styles/varyable.scss";
 @import "../../../styles/text.scss";
+
 .best{
     display: flex;
     flex-direction: column;
@@ -84,3 +85,37 @@
         }
     }
 }//best
+
+/* React Transition Group */
+.cards{
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.cards-enter {
+    opacity: 0;
+    visibility: hidden;
+}
+.cards-enter-active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+}
+.cards-enter-done {
+    opacity: 1;
+    visibility: visible;
+}
+.cards-exit {
+    opacity: 1;
+    visibility: visible;
+}
+.cards-exit-active {
+    opacity: 0;
+    visibility: hidden;
+}
+.cards-exit-done{
+opacity: 0;
+visibility: hidden;
+transition: all 1s ease-in-out;
+}
+
