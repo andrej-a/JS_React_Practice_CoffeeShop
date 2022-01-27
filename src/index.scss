@@ -1,5 +1,6 @@
-@import "../../styles/varyable.scss";
-.app{
+
+@import "./styles/varyable.scss";
+.root{
     display: flex;
     position: relative;
     flex-direction: column;
@@ -13,27 +14,27 @@
 
 //MEDIA
 @media(max-width: $bp1) {
-    .app{
+    .root{
         width: 1500px;
     }
 }
 @media(max-width: $bp2) {
-    .app{
+    .root{
         width: 1299px;
     }
 }
 @media(max-width: $bp3) {
-    .app{
+    .root{
         width: 1092px;
     }
 }
 @media(max-width: $bp4) {
-    .app{
+    .root{
         width: 867px;
     }
 }
 @media(max-width: $bp5) {
-    .app{
+    .root{
         display: flex;
         justify-content: center;
         align-items: center;

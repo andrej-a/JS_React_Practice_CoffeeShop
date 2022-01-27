@@ -29,3 +29,50 @@
     line-height: 35px;
     color: $main-color;
 }
+
+//MEDIA 1199
+@media (max-width: $bp2){
+    .header_text{
+        font-size: 35px;
+    }
+
+    .subheader_text{
+        font-size: 23px;
+    }
+}
+//MEDIA 992
+@media (max-width: $bp3){
+    .header_text{
+        font-size: 30px;
+    }
+
+    .subheader_text{
+        font-size: 19px;
+    }
+}
+//MEDIA 767
+@media (max-width: $bp4){
+    .header_text{
+        font-size: 22px;
+    }
+
+    .subheader_text{
+        font-size: 13px;
+    }
+    .text{
+        font-size: 11px;
+        line-height: 20px;
+        color: $dark-color;
+    }
+}
+
+//MEDIA 488
+@media (max-width: $bp5){
+    .header_text{
+        font-size: 21px;
+    }
+
+    .subheader_text{
+        font-size: 13px;
+    }
+}

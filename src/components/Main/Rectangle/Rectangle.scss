@@ -1,5 +1,6 @@
 @import "../../../styles/varyable.scss";
 @import "../../../styles/text.scss";
+
 .rectangle{
     display: flex;
     flex-direction: column;
@@ -29,3 +30,74 @@
         }
     }
 }//rectangle
+
+//MEDIA
+
+//MEDIA 992
+@media(max-width: $bp3) {
+    .rectangle{
+        height: 450px;
+    
+        &__aboutUs{
+            padding-top: 55px;
+        }
+    
+        &__description{
+            width: 589px;
+            height: 223px;
+            margin-top: 41px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}
+
+//MEDIA 767
+@media(max-width: $bp4) {
+    .rectangle{
+        height: 400px;
+        background-color: $main-color;
+    
+        &__aboutUs{
+            width: auto;
+            padding-top: 30px;
+        }
+    
+        &__description{
+            width: 400px;
+            height: 272px;
+            margin-top: 15px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}
+
+//MEDIA 480
+@media(max-width: $bp5) {
+    .rectangle{
+        height: 470px;
+        .main__logo{
+            padding-top: 30px;
+        }
+        &__aboutUs{
+            width: auto;
+            padding-top: 30px;
+        }
+    
+        &__description{
+            width: 300px;
+            padding: 0px 10px 0px 10px;
+            height: 310px;
+            margin-top: 15px;
+    
+            p{
+                text-align: center;
+            }
+        }
+    }//rectangle
+}

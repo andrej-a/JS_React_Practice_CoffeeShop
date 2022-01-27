@@ -1,4 +1,6 @@
-.main__logo{
+@import "../../styles/varyable.scss";
+
+.main__logo, .dark__logo{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,9 +9,10 @@
     width: 200px;
    
     &__group, &__groupDark{
-        width: 35px;
-        height: 30px;
+        width: 30px;
+        height: 35px;
         background-repeat: no-repeat;
+        background-position: center;
         background-image: url(../../resources/Group.png);
 
         &__after, &__before{
@@ -31,3 +34,70 @@
         background-image: url(../../resources/blackGroup.png);
     }
 }//logo
+
+//MEDIA 1199
+@media (max-width: $bp2) {
+    .main__logo, .dark__logo{
+        padding-top: 50px;
+       
+    } 
+}
+
+//MEDIA 992
+@media (max-width: $bp3) {
+    .main__logo, .dark__logo{
+        padding-top: 35px;
+      
+    } 
+}
+
+//MEDIA 767
+@media (max-width: $bp4) {
+    .main__logo, .dark__logo{
+        width: 150px;
+        padding-top: 15px;
+
+        &__group, &__groupDark{
+            width: 60px;
+            height: 35px;
+            background-image: url(../../resources/Group.png);
+    
+            &__after, &__before{
+                margin-left: 15px;
+            }
+    
+            &__before{
+                margin-right: 15px;
+            }
+        }
+
+        &__groupDark{
+            background-image: url(../../resources/blackGroup.png);
+        }
+    }
+}
+
+//MEDIA 480
+@media (max-width: $bp5) {
+    .main__logo, .dark__logo{
+        padding-top: 85px;
+
+        &__group, &__groupDark{
+            width: 60px;
+            height: 35px;
+            background-image: url(../../resources/Group.png);
+    
+            &__after, &__before{
+                margin-left: 15px;
+            }
+    
+            &__before{
+                margin-right: 15px;
+            }
+        }
+
+        &__groupDark{
+            background-image: url(../../resources/blackGroup.png);
+        }
+    }
+}

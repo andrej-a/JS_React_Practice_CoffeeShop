@@ -4,7 +4,7 @@ const Rectangle = (props) => {
     return(
         <div className="rectangle">
             <div className="rectangle__aboutUs"><span className="subheader_text">About Us</span></div>
-            <Logo borderColorDark={"#000"} class={"main__logo__groupDark"}/>
+            <Logo borderColorDark={"#000"} class={"dark__logo__groupDark"}/>
             <div className="rectangle__description">
                 <p className="text">
                     Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.

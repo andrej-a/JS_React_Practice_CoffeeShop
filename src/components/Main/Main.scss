@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 @import "../../styles/varyable.scss";
 @import "../../styles/text.scss";
+
 .main{
     display: flex;
     position: relative;
     flex-direction: column;
+    overflow: hidden;
     margin: 0 auto;
     width: $width;
     max-width: $max-width;
     min-width: $min-width;
     height: auto;
-    min-height: $main-height;
+    min-height: 1000px;
 
     &__header{
         display: flex;
@@ -20,11 +22,11 @@
         width: 1440px;
         height: 640px;
         background-image: url(../../resources/MainBG.jpg);
+        background-size: cover;
     }
 
     &__title{
         display: block;
-        width: 670px;
         height: 44px;
 
         font-weight: 700;
@@ -72,5 +74,141 @@
         span {
             color: $dark-color;
         }
+    }
+}
+
+//MEDIA 1412
+
+@media (max-width: $bp1) {
+    .main{
+        width: 1187px;
+    
+        &__header{
+            width: 1187px;
+            height: 640px;
+        }
+    
+    }
+}
+
+//MEDIA 1200
+
+@media (max-width: $bp2) {
+    .main{
+        width: 980px;
+        &__header{
+            width: 980px;
+            height: 540px;
+            background-image: url(../../resources/MainBG.jpg);
+
+        }
+        &__title{
+            padding-top: 151px;
+        }
+        &__subtitle{
+            height: 27px;
+            margin-top: 35px;
+    
+        }
+    
+    }
+}
+ //MEDIA 992
+@media (max-width: $bp3) {
+    .main{
+        width: 750px;
+        &__header{
+            width: 750px;
+            height: 450px;
+            background-image: url(../../resources/MainBG.jpg);
+
+        }
+        &__title{
+            padding-top: 110px;
+        }
+        &__subtitle{
+            margin-top: 28px;
+    
+        }
+    
+        &__tryBeans{
+            margin-top: 18px;
+        }
+    
+    }
+}
+
+//MEDIA 767
+@media (max-width: $bp4) {
+    .main{
+        width: 468px;
+        &__header{
+            width: 468px;
+            height: 350px;
+            background-image: url(../../resources/MainBG.jpg);
+
+        }
+        &__title{
+            padding-top: 75px;
+        }
+        &__subtitle{
+            margin-top: 10px;
+    
+        }
+    
+        &__tryBeans{
+            margin-top: 10px;
+        }
+
+        &__moreBtn{
+            width: 100px;
+            height: 30px;
+            margin-top: 15px;
+            span{
+                font-weight: bold;
+                transition: color .5s ease;
+                color: $main-color;
+            }
+    
+        }
+    
+    }
+}
+
+@media (max-width: $bp5) {
+    .main{
+        width: 320px;
+        &__header{
+            width: 320px;
+            height: 450px;
+            background-image: url(../../resources/MainBG.jpg);
+
+        }
+        &__title{
+            width: 211px;
+            text-align: center;
+            padding-top: 80px;
+        }
+        &__subtitle{
+            margin-top: 19px;
+    
+        }
+    
+        &__tryBeans{
+            margin-top: 10px;
+        }
+
+        &__moreBtn{
+            width: 100px;
+            height: 30px;
+            margin-top: 15px;
+            span{
+                font-weight: bold;
+                transition: color .5s ease;
+                color: $main-color;
+            }
+    
+        }
+    
     }
 }

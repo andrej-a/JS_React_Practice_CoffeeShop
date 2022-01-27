@@ -119,3 +119,103 @@ visibility: hidden;
 transition: all 1s ease-in-out;
 }
 
+/*MEDIA*/
+
+//MEDIA 992
+@media(max-width: $bp3){
+    .best{
+        &__list{
+            width: 700px;
+            
+            &__items{
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+//MEDIA 767
+@media(max-width: $bp4){
+    .best{
+        &__list{
+            width: 453px;
+            
+            &__items{
+
+                &__item{
+                    width: 200px;
+                    height: 230px;
+                    margin-bottom: 25px;
+                    img{
+                        position: absolute;
+                        width: 151px;
+                        height: 130px;
+                        top: 22px;
+                        left: 26px;
+                    }
+                    .title{
+                        position: absolute;
+                        width: 177px;
+                        height: 21px;
+                        top: 170px;
+                        left: 16px;
+    
+                    }
+                    .cost{
+                        position: absolute;
+                        width: 47px;
+                        height: 21px;
+                        top: 185px;
+                        left: 145px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MEDIA 480
+@media(max-width: $bp5){
+    .best{
+        &__list{
+            width: 300px;
+            
+            &__items{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &__item{
+                    width: 220px;
+                    height: 240px;
+                    margin-bottom: 25px;
+                    img{
+                        position: absolute;
+                        width: 151px;
+                        height: 130px;
+                        top: 22px;
+                        left: 34px;
+                    }
+                    .title{
+                        position: absolute;
+                        width: 177px;
+                        height: 21px;
+                        top: 166px;
+                        left: 21px;
+    
+                    }
+                    .cost{
+                        position: absolute;
+                        width: 47px;
+                        height: 21px;
+                        top: 197px;
+                        left: 153px;
+                    }
+                }
+            }
+        }
+    }
+}
+

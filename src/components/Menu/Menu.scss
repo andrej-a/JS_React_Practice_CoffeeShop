@@ -1,4 +1,5 @@
 @import "../../styles/varyable.scss";
+
 .menu, .menu-header{
     display: flex;
     align-items: flex-end;
@@ -60,4 +61,90 @@
         background-image: url(../../resources/menuLogoWhite.png);
         background-position: center center;
     }
+}
+
+//MEDIA 1400
+@media (max-width: $bp1) {
+    .menu-header{
+        left: calc((100% - $bp2) / 2 + 100px);
+    } 
+}
+//MEDIA 1199
+@media (max-width: $bp2) {
+    .menu-header{
+        left: calc((100% - $bp3) / 2 + 100px);
+    } 
+}
+//MEDIA 992
+@media (max-width: $bp3) {
+    .menu-header{
+        left: calc((100% - $bp4) / 2 + 80px);
+        top: 0px;
+    }
+        
+}
+
+//MEDIA 767
+@media (max-width: $bp4) {
+    .menu-header{
+        left: calc((100% - $bp5) / 2 + 53px);
+        top: -15px;
+    }
+        
+}
+
+//MEDIA 488
+@media (max-width: $bp5) {
+    .menu-header{
+        left: calc((100% - 320px) / 2);
+        top: 0;
+        width: 320px;
+        height: 450px;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+
+        
+        a:hover {
+            color: rgb(214, 69, 69);
+        }
+        a:active,
+        a{
+            font-size: 29px;
+            line-height: 17px;
+            color: $dark-color;
+            text-decoration: none;
+        }
+
+        &__logo, &__logo-header{
+            width: 35px;
+            height: 35px;
+            background-image: url(../../resources/menuLogo.png);
+        }
+
+        &__homePage{
+            width: 200px;
+            height: auto;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        &__ourCoffePage{
+            width: 200px;
+            height: auto;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        &__forYouPage{
+            width: 200px;
+            height: auto;
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+        
 }
