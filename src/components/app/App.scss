@@ -5,38 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 1500px;
+    width: auto;
     height: auto;
     min-height: 960px;
-}
-
-//MEDIA
-@media(max-width: $bp1) {
-    .app{
-        width: 1500px;
-    }
-}
-@media(max-width: $bp2) {
-    .app{
-        width: 1299px;
-    }
-}
-@media(max-width: $bp3) {
-    .app{
-        width: 1092px;
-    }
-}
-@media(max-width: $bp4) {
-    .app{
-        width: 867px;
-    }
-}
-@media(max-width: $bp5) {
-    .app{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 420px;
-    }
 }

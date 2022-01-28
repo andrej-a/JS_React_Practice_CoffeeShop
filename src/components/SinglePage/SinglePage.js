@@ -22,7 +22,7 @@ const SinglePage = () => {
             return
         } else {
                const card = data.map(item => {
-                if (item.id == itemID) {
+                if (+item.id === +itemID) {
                     return (
                         <div key={item.id} className="cardItem">
                             <div className="cardItem__image">

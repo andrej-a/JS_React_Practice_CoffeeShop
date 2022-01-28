@@ -9,3 +9,49 @@
     min-width: $min-width;
     height: 150px;
 }
+
+//MEDIA
+
+//MEDIA 1412
+@media (max-width: $bp1) {
+    .footer{
+        width: 1187px;
+    }
+}
+//MEDIA 1199
+@media (max-width: $bp2) {
+    .footer{
+        width: 980px;
+    }
+}
+//MEDIA 992
+@media (max-width: $bp3) {
+    .footer{
+        width: 767px;
+    }
+}
+//MEDIA 767
+@media (max-width: $bp4) {
+    .footer{
+        width: 480px;
+    }
+}
+
+//MEDIA 480
+@media (max-width: $bp5) {
+    .footer{
+        width: 320px;
+        height: 100px;
+        
+        .menu{
+            width: 320px;
+            padding-top: 20px;
+            a{
+                font-size: 11px;
+            }
+            &__logo{
+                display: none;
+            }
+        }
+    }
+}
