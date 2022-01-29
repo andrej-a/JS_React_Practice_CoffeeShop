@@ -7,7 +7,7 @@
     width: $width;
     max-width: $max-width;
     min-width: $min-width;
-    height: 715px;
+    //height: 100vh;
     margin-bottom: 190px;
 
     &__cardField{
@@ -29,6 +29,8 @@
                 position: relative;
 
                 img{
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
                     top: -25px;
                     left: -25px;
@@ -79,7 +81,7 @@
 
                 &__description{
                     position: absolute;
-                    width: 418px;
+                    width: inherit;
                     height: 102px;
                     left: 55px;
                     top: 147px;
@@ -109,6 +111,347 @@
                         font-style: italic;
                         font-weight: 900;
                         font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MEDIA
+//MEDIA 1412
+@media(max-width: $bp1) {
+    .singlePage{
+        width: 1187px;
+    }
+}
+//MEDIA 1199
+@media(max-width: $bp2) {
+    .singlePage{
+        width: 980px;
+    }
+}
+//MEDIA 992
+@media(max-width: $bp3) {
+    .singlePage{
+        width: 767px;
+
+        &__cardField{
+            .cardItem{
+                display: flex;
+                width: 750px;
+                height: 366px;
+                overflow: hidden;
+    
+                &__image{
+                    width: 392px;
+                    height: 355px;
+                    position: relative;
+    
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+    
+                &__info{
+                    display: block;
+                    position: relative;
+                    width: 392px;
+                    height: inherit;
+    
+                    &__about{
+                        width: 99px;
+                        height: 26px;
+                        position: absolute;
+                        left: 140px;
+                        p{
+                            font-size: 24px;
+                            line-height: 35px;
+    
+                        }
+                    }
+    
+                    &__logo{
+                        position: absolute;
+                        width: 200px;
+                        height: 30px;
+                        left: 87px;
+                        top: 55px;
+                    }
+    
+                    &__country{
+                        position: absolute;
+                        height: 21px;
+                        left: 15px;
+                        top: 110px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__description{
+                        position: absolute;
+                        width: 350px;
+                        height: auto;
+                        left: 15px;
+                        top: 147px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__price{
+                        position: absolute;
+                        width: 127px;
+                        height: 35px;
+                        left: 15px;
+                        top: 265px;
+                        margin-top: 20px;
+    
+                        p{
+                            font-weight: 700;
+                        }
+                        span{
+                            font-style: italic;
+                            font-weight: 900;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .singlePage{
+        width: 480px;
+        margin-bottom: 0;
+
+        &__cardField{
+            height: 650px;
+            .cardItem{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 480px;
+                height: 650px;
+                overflow: hidden;
+    
+                &__image{
+                    width: 392px;
+                    height: 50%;
+                    position: relative;
+    
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+    
+                &__info{
+                    display: block;
+                    position: relative;
+                    width: 392px;
+                    height: 50%;
+    
+                    &__about{
+                        width: 99px;
+                        height: 26px;
+                        position: absolute;
+                        left: 151px;
+                        p{
+                            font-size: 24px;
+                            line-height: 35px;
+    
+                        }
+                    }
+    
+                    &__logo{
+                        position: absolute;
+                        width: 200px;
+                        height: 30px;
+                        left: 115px;
+                        top: 55px;
+                    }
+    
+                    &__country{
+                        position: absolute;
+                        height: 21px;
+                        left: 15px;
+                        top: 110px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__description{
+                        position: absolute;
+                        width: 350px;
+                        height: auto;
+                        left: 15px;
+                        top: 147px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__price{
+                        position: absolute;
+                        width: 127px;
+                        height: 35px;
+                        left: 15px;
+                        top: 265px;
+                        margin-top: 20px;
+    
+                        p{
+                            font-weight: 700;
+                        }
+                        span{
+                            font-style: italic;
+                            font-weight: 900;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .singlePage{
+        width: 320px;
+        margin-bottom: 0;
+        justify-content: normal;
+
+        &__cardField{
+            width: 320px;
+            height: 650px;
+            .cardItem{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 320px;
+                height: 650px;
+                overflow: hidden;
+    
+                &__image{
+                    width: 300px;
+                    height: 300px;
+                    position: relative;
+    
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+    
+                &__info{
+                    display: block;
+                    position: relative;
+                    width: 392px;
+                    height: 350px;
+    
+                    &__about{
+                        width: 99px;
+                        height: 26px;
+                        position: absolute;
+                        left: 145px;
+                        p{
+                            font-size: 24px;
+                            line-height: 35px;
+    
+                        }
+                    }
+    
+                    &__logo{
+                        position: absolute;
+                        width: 200px;
+                        height: 30px;
+                        left: 110px;
+                        top: 55px;
+                    }
+    
+                    &__country{
+                        position: absolute;
+                        height: 21px;
+                        left: 40px;
+                        top: 110px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__description{
+                        position: absolute;
+                        width: 300px;
+                        height: auto;
+                        left: 40px;
+                        top: 147px;
+    
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            span{
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+    
+                    &__price{
+                        position: absolute;
+                        width: 127px;
+                        height: 35px;
+                        left: 40px;
+                        top: 295px;
+                        margin-top: 20px;
+    
+                        p{
+                            font-weight: 700;
+                        }
+                        span{
+                            font-style: italic;
+                            font-weight: 900;
+                            font-size: 25px;
+                        }
                     }
                 }
             }

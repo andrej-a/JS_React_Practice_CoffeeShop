@@ -19,3 +19,42 @@
         }
     }
 }
+
+//MEDIA
+//MEDIA 1412
+@media(max-width: $bp1){
+    .title{
+        width: 1187px;
+    }
+};
+//MEDIA 1199
+@media(max-width: $bp2){
+    .title{
+        width: 980px;
+    }
+};
+//MEDIA 992
+@media(max-width: $bp3){
+    .title{
+        width: 7750px;
+    }
+};
+//MEDIA 767
+@media(max-width: $bp4){
+    .title{
+        width: 465px;
+        p{
+            font-size: 20px;
+        }
+    }
+};
+//MEDIA 480
+@media(max-width: $bp5){
+    .title{
+        width: 320px;
+        text-align: center;
+        p{
+            font-size: 20px;
+        }
+    }
+};
