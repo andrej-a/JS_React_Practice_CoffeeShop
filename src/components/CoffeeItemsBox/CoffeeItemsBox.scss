@@ -90,4 +90,24 @@ transition: all 1s ease-in-out;
 }
 
 
+//MEDIA
 
+//MEDIA 992
+@media(max-width: $bp3) {
+    .coffee_items{
+        width: 767px;
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .coffee_items{
+        width: 480px;
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .coffee_items{
+        width: 320px;
+        justify-content: center;
+    }
+}

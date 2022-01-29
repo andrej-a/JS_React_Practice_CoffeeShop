@@ -4,9 +4,41 @@
 
 .pleasure{
     width: $width;
-    max-width: $max-width;
     min-width: $min-width;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+//MEDIA
+
+//MEDIA 1412
+@media(max-width: $bp1) {
+    .pleasure{
+        width: 1187px;
+    }
+}
+//MEDIA 1199
+@media(max-width: $bp2) {
+    .pleasure{
+        width: 980px;
+    }
+}
+//MEDIA 992
+@media(max-width: $bp3) {
+    .pleasure{
+        width: 767px;
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .pleasure{
+        width: 480px;
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .pleasure{
+        width: 320px;
+    }
 }

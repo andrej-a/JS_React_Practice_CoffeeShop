@@ -69,3 +69,138 @@
     margin-top: 60px;
     border: 1px solid $dark-color;
 }
+
+//MEDIA
+
+//MEDIA 992
+@media(max-width: $bp3) {
+    .pageDescription{
+        width: 675px;
+        padding-top: 33px;
+
+            &__image{
+                width: 255px;
+                height: 355px;
+                overflow: hidden;
+        
+                img{
+                    width: inherit;
+                    height: inherit;
+                    left: 7px;
+                }
+            }
+
+        &__text{
+            width: 420px;
+            height: auto;
+    
+            &__title{
+                left: 104px;
+            }
+    
+            &__logo{
+                left: 80px;
+            }
+    
+            &__descr{
+                width: 346px;
+                height: 232px;
+                left: 10px;
+            }
+        }
+    }
+}
+//MEDIA 767
+@media(max-width: $bp4) {
+    .pageDescription{
+            width: 480px;
+            height: auto;
+            padding-top: 33px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            &__image{
+                width: 420px;
+                height: 480px;
+                overflow: hidden;
+        
+                img{
+                    width: inherit;
+                    height: inherit;
+                    left: 7px;
+                }
+            }
+
+        &__text{
+            width: 420px;
+            height: 320px;
+    
+            &__title{
+                left: 155px;
+            }
+    
+            &__logo{
+                left: 124px;
+            }
+    
+            &__descr{
+                width: 346px;
+                height: auto;
+                left: 39px;
+            }
+        }
+    }
+
+    .bottom_line{
+        margin-top: 30px;
+    }
+}
+//MEDIA 480
+@media(max-width: $bp5) {
+    .pageDescription{
+            width: 320px;
+            height: auto;
+            padding-top: 33px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            &__image{
+                width: 300px;
+                height: 420px;
+        
+                img{
+                    width: inherit;
+                    height: inherit;
+                    left: 0px;
+                }
+            }
+
+        &__text{
+            width: 300px;
+            height: 320px;
+            margin-bottom: 30px;
+    
+            &__title{
+                left: 97px;
+            }
+    
+            &__logo{
+                left: 69px;
+            }
+    
+            &__descr{
+                width: 290px;
+                height: auto;
+                left: 6px;
+            }
+        }
+    }
+
+    .bottom_line{
+        margin-top: 10px;
+    }
+}

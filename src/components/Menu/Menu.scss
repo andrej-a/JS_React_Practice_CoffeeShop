@@ -100,12 +100,14 @@
         top: 0;
         width: 320px;
         height: 450px;
-        background-color: rgba($color: #fff, $alpha: 0.5);
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba($color: #fff, $alpha: 0.7);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 0;
+        transition: opacity, visibility .3s ease;
 
         
         a:hover {
@@ -145,6 +147,12 @@
             text-align: left;
             margin-top: 30px;
         }
+
+    }
+
+    .active{
+        visibility: visible;
+        opacity: 1;
     }
         
 }

@@ -80,7 +80,7 @@
 //MEDIA 480
 @media(max-width: $bp5) {
     .rectangle{
-        height: 470px;
+        height: auto;
         .main__logo{
             padding-top: 30px;
         }
@@ -91,7 +91,7 @@
     
         &__description{
             width: 300px;
-            padding: 0px 10px 0px 10px;
+            padding: 0px 10px 10px 10px;
             height: 310px;
             margin-top: 15px;
     
