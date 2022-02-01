@@ -349,19 +349,19 @@
 //MEDIA 480
 @media(max-width: $bp5) {
     .singlePage{
-        width: 320px;
+        width: 100vw;
         margin-bottom: 0;
         justify-content: normal;
 
         &__cardField{
-            width: 320px;
+            width: 100vw;
             height: 650px;
             .cardItem{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 320px;
+                width: 100vw;
                 height: 650px;
                 overflow: hidden;
     

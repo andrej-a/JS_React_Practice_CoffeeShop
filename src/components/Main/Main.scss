@@ -177,9 +177,9 @@
 
 @media (max-width: $bp5) {
     .main{
-        width: 320px;
+        width: 100vw;
         &__header{
-            width: 320px;
+            width: 100vw;
             height: 450px;
             background-image: url(../../resources/MainBG.jpg);
 

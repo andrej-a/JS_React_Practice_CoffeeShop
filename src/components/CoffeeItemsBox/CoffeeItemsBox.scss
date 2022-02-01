@@ -107,7 +107,7 @@ transition: all 1s ease-in-out;
 //MEDIA 480
 @media(max-width: $bp5) {
     .coffee_items{
-        width: 320px;
+        width: 100vw;
         justify-content: center;
     }
 }

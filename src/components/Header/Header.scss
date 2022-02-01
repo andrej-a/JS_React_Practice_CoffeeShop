@@ -55,7 +55,7 @@
 //MEDIA 480
 @media(max-width: $bp5) {
     .header, .header-pleasure{
-        width: 320px;
+        width: 100vw;
         height: 165px;
         &__title{
             padding-top: 55px;

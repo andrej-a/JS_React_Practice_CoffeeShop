@@ -180,7 +180,7 @@ transition: all 1s ease-in-out;
 @media(max-width: $bp5){
     .best{
         &__list{
-            width: 300px;
+            width: 100vw;
             
             &__items{
                 flex-direction: column;
@@ -202,7 +202,7 @@ transition: all 1s ease-in-out;
                         position: absolute;
                         width: 177px;
                         height: 21px;
-                        top: 166px;
+                        top: 172px;
                         left: 21px;
     
                     }
@@ -210,7 +210,7 @@ transition: all 1s ease-in-out;
                         position: absolute;
                         width: 47px;
                         height: 21px;
-                        top: 210px;
+                        top: 215px;
                         left: 153px;
                     }
                 }

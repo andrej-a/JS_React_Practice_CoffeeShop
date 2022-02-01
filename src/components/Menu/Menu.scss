@@ -95,9 +95,9 @@
 //MEDIA 488
 @media (max-width: $bp5) {
     .menu-header{
-        left: calc((100% - 320px) / 2 - 3px);
+        left: auto;
         top: -500px;
-        width: 325px;
+        width: 100vw;
         height: 100vh;
         opacity: 0;
         visibility: hidden;

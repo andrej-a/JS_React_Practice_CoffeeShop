@@ -140,7 +140,7 @@
 //MEDIA 480
 @media(max-width: $bp5) {
     .ourCoffee{
-        width: 320px;
+        width: 100vw;
     
         &__activ{
             display: flex;

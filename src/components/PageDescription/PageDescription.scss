@@ -160,7 +160,7 @@
 //MEDIA 480
 @media(max-width: $bp5) {
     .pageDescription{
-            width: 320px;
+            width: 100vw;
             height: auto;
             padding-top: 33px;
             display: flex;
@@ -180,22 +180,22 @@
             }
 
         &__text{
-            width: 300px;
+            width: 100vw;
             height: 320px;
             margin-bottom: 60px;
     
             &__title{
-                left: 97px;
+                left: 150px;
             }
     
             &__logo{
-                left: 69px;
+                left: 120px;
             }
     
             &__descr{
                 width: 290px;
                 height: auto;
-                left: 6px;
+                left: 56px;
             }
         }
     }
