@@ -22,7 +22,8 @@ function App() {
     };
 
     (function setOverflow(){
-        if (check) {
+        if (check && document.documentElement.clientWidth < 480) {
+            console.log(document.documentElement.clientWidth);
             document.body.style.overflow = "hidden";
         } else {
             document.body.style.overflow = "";
